@@ -25,6 +25,11 @@ export default function Countries(){
             name:"Antarctic",
         },
     ]
+
+    useEffect(()=>{
+        document.title=`Showing All Countries`;
+    },[])
+
     useEffect(()=>{
         const getCountries = async()=>{
             try {
